@@ -1,0 +1,13 @@
+user signsup
+(recieves verification otp/code to detect real email)
+proceeds to login
+
+
+user in dashboard
+(option for user to either use registered email to send, or can input new email)
+
+ability to send texts, links, attachments
+ability to view sent messages
+
+
+(maynot be able to view inbox and reply, just to send)

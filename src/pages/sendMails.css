@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.sendMailCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 81, 255);
+    color:white;
+    /* border:.1px solid white; */
+    padding:15px 0 30px 0;
+    position:relative;
+    overflow-x: hidden;
+    /* height: 160vh; */
+}
+.sendMailInner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border:.1px solid rgb(255, 251, 1); */
+    padding: 60px;
+    border-radius: 7px;
+    background-color: rgb(76, 131, 252);
+    /* position:relative; */
+}
+.sendMailCont h2{
+  font-family:sans-serif;
+  margin-top:1em;
+  font-size: 2em;
+  color:rgb(255, 196, 0)
+}
+/* .sendMailCont h2::before{
+  content: "|";
+
+} */
+.sendMailCont button{
+  padding:10px 60px 10px 60px;
+  background-color: rgb(7, 255, 7);
+  border:none;
+  border-radius: 7px;
+  color:white;
+  box-shadow: 0 0 14px rgb(255, 255, 254);
+  margin:30px 0 15px 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+.sendMailCont button:hover{
+    background-color: rgb(255, 238, 7);
+}
+.sendMailCont .contd{
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 2.4px;
+    font-weight: 100;
+   background:rgba(255, 0, 0, 0.123);
+   padding:10px 25px 10px 25px;
+   border-radius: 10px;
+   color:rgb(243, 243, 243)
+}
+.sendMailInner .mailOptions{
+    /* border:.1px solid white; */
+    padding:15px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content:center;
+}
+.sendMailInner .mailOptions button{
+    padding:15px;
+    background-color: rgb(248, 248, 56);
+    border:none;
+    border-radius: 7px;
+    color:rgb(87, 87, 87);
+    box-shadow: 0 0 4px rgb(255, 255, 5);
+    margin:1px 10px 15px 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sendMailInner .mailOptions button:first-child:hover,
+.sendMailInner .mailOptions button:nth-child(2):hover,
+.sendMailInner .mailOptions button:nth-child(3):hover
+{
+    background-color: rgb(2, 12, 2);
+}
+.sendMailInner .mailOptions button:first-child::before{
+    content: "Send Mails";
+   visibility: hidden;
+   transition: .2s ease-in-out;
+    position: absolute;
+    top:-90%;
+    left:0;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(137, 137, 138, 0.11);
+   }
+   .sendMailInner .mailOptions button:nth-child(2)::before{
+   visibility: hidden;
+   transition: .2s ease-in-out;  
+    content: "Reply messages";
+    position: absolute;
+    top:-90%;
+    left:0;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(137, 137, 138, 0.11);
+   }
+   .sendMailInner .mailOptions button:nth-child(3)::before{
+   visibility: hidden;
+   transition: .2s ease-in-out;  
+    content: "View history";
+    position: absolute;
+    top:-90%;
+    left:0;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 10px;
+    background-color: rgba(137, 137, 138, 0.11);
+   }
+.sendMailInner .mailOptions button:first-child{
+  background-color: green;
+  color:yellow;
+  position: relative;
+}
+.sendMailInner .mailOptions button:nth-child(2){
+  background-color: rgb(128, 0, 0);
+  color:yellow;
+  position: relative;
+}
+.sendMailInner .mailOptions button:nth-child(3){
+  background-color: rgb(1, 65, 82);
+  color:yellow;
+  position: relative;
+}
+
+.sendMailInner .mailOptions button:first-child:hover::before{
+    visibility: visible;
+}
+.sendMailInner .mailOptions button:nth-child(2):hover::before{
+    visibility: visible;
+}
+.sendMailInner .mailOptions button:nth-child(3):hover::before{
+    visibility: visible;
+}
+
+
+/* send mails */
+.sendMails{
+    border:.2px solid white;
+    border-radius: 10px;
+    padding:20px;
+    margin-top:3px;
+    background-color: rgba(0, 128, 0, 0.616);
+}
+.sendMails h3{
+    font-size: 21px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(155, 155, 155);
+    border-radius: 10px;
+    padding:10px
+}
+.sendMails .one{
+    margin-top:5px;
+    /* border:2px solid white; */
+    padding:10px
+}
+.sendMails .one span{
+    font-size: 15px;
+    font-family:verdana;
+    letter-spacing: 1.4px;
+    background-color: rgba(29, 29, 27, 0.671);
+    color:yellow;
+    padding:5px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 20px;
+    /* margin-left: 5px; */
+    /* width:60% */
+}
+.sendMails .one div{
+  margin: 10px;
+  background-color: rgba(12, 12, 12, 0.288);
+  border-radius: 10px;
+}
+.sendMails .one button{
+    padding:10px;
+    background-color: rgb(27, 211, 42);
+    border:none;
+    border-radius: 7px;
+    color:rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgb(3, 26, 3);
+    margin:10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sendMails form button{
+    padding:10px;
+    background-color: rgb(27, 211, 42);
+    border:none;
+    border-radius: 7px;
+    color:rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgb(3, 26, 3);
+    margin:10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sendMails .one button:hover,
+.sendMails form button:hover{
+    background-color: rgba(27, 211, 42, 0.342);
+}
+textarea{
+    width:14em;
+    border-radius: 10px;
+    background-color:rgba(27, 211, 42, 0.103) ;
+    color:white;
+    padding:5px;
+    display: block;
+}
+
+/* reply emails */
+.replyMails{
+    border:.2px solid white;
+    border-radius: 10px;
+    padding:20px;
+    margin-top:3px;
+    background-color: rgba(0, 128, 0, 0.616);
+    width: 40em;
+    /* width:20em; */
+}
+.replyMails .head{
+    font-size: 21px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(155, 155, 155);
+    border-radius: 10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.replyMails .head .notification{
+    background-color: rgba(172, 255, 47, 0.705);
+    padding:7px;
+    border-radius: 10px;
+}
+.replyMails .head .notification span{
+     /* border:.2px solid white; */
+     font-size: 12px;;
+     border-radius: 20px;
+     display: inline-block;
+     text-align: center;
+     margin-right: .3em;
+     background-color: rgb(255, 0, 0);
+     color:white;
+     font-weight: bold;
+     padding:4px;
+     font-size: 16px;
+
+}
+
+.replyMails .head .notification i{
+    margin-right: 0em;
+    color:rgb(123, 255, 0)
+}
+.replyMails .contents{
+    /* border:.3px solid white; */
+    margin-top:20px;
+    display: block;
+}
+.replyMails .contents .indiv{
+    /* border:.2px solid white; */
+    margin:10px;
+    display: flex;
+   background-color: rgba(255, 255, 255, 0.274);
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 13px;
+   height:3.4em;
+   position: relative;
+   /* overflow-y: hidden; */
+}
+.replyMails .contents .indiv .moreOptions{
+    display: none;
+    position: absolute;
+   width:100%;
+   height:100%;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.815);
+
+}
+.replyMails .contents .indiv .moreOptions button{
+    padding:4px;
+    margin:5px;
+    background-color: rgb(14, 165, 165);
+    font-size: 13px;
+    width:unset
+    /* height:3.2em */
+}
+.replyMails .contents .indiv .moreOptions:nth-child(2){
+    padding:4px;
+    margin:5px;
+    background-color: rgb(14, 165, 165);
+    font-size: 11px;
+    width:unset
+    /* height:3.2em */
+}
+.replyMails .contents .indiv .moreOptions button:hover{
+    background-color: rgb(9, 250, 250);
+}
+
+
+.replyMails .contents .indiv:hover> .moreOptions{
+  display: flex;
+  align-items: center;
+  justify-content:center
+}
+.replyMails .contents .indiv span{
+    display:block;
+    margin:5px;
+    background-color: rgba(0, 0, 0, 0.822);
+    padding:10px 23px 10px 3px;
+    border-radius: 10px;
+    font-family: sans-serif;
+   /* height:3em; */
+   margin-bottom:4px;
+   overflow: hidden;
+   text-align: center;
+   line-height: 15px;;
+   /* width:6em; */
+   text-align: start;
+   font-size: 12px;
+}
+
+.replyMails .contents .indiv .littleMessage{
+    display:block;
+    margin:5px;
+    background-color: rgba(255, 255, 0, 0.534);
+    padding:10px 15px 10px 15px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+   height:3em;
+   margin-bottom:4px;
+   overflow: hidden;
+   width:auto
+}
+.replyMails .contents .indiv .namee{
+    margin: 5px;
+    background-color: rgba(0, 140, 255, 0.836);
+    padding:10px 15px 10px 15px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    /* height:3em; */
+    margin-bottom:4px
+}
+.newMessage{
+    background-color: rgba(255, 0, 0, 0.767);
+}
+.replyMails .contents .indiv:hover{
+    /* transform: scaleX(120%); */
+  }
+  @media (max-width:668px){
+    .replyMails{
+        width:25em
+    }
+}
+@media (max-width:383px){
+    .replyMails{
+        width:19em
+    }
+}
+.replyMails .replyPopup{
+    position: absolute;
+    top:0%;
+    left:0%;
+    right:0%;
+    width:100%;
+    bottom:0%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.685)
+    /* margin:auto */
+}
+.replyMails .replyPopup i{
+    position: absolute;
+    top:2%;
+    right:2%;
+    font-size: 21px;
+}
+.replyMails .replyPopup .inne{
+   border:2px solid white;
+   width:20em; 
+   /* height: 25em; */
+   background-color: rgba(255, 255, 255, 0.76);
+   color:black;
+   border-radius: 10px;
+   box-shadow: 0 0 20px white;
+}
+.replyMails .replyPopup .inne .readEmail{
+   font-size: 17px;
+   font-family:sans-serif;
+   padding:10px;
+   height:16em;
+   background-color: rgba(0, 0, 0, 0.315);
+   overflow: auto;
+   color:black;
+   border-radius: 10px;
+}
+.replyMails .replyPopup .inne .moreActions{
+    /* border:2px solid black; */
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 10px;
+    height: 3em;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.replyMails .replyPopup .inne .moreActions button{
+    padding:10px;
+    margin: 2px;
+}
+.replyMails .replyPopup .inne .moreActions input{
+    height:80%;
+    width:62%;
+    border-radius: 10px;
+    border:none;
+    /* font-weight: 600; */
+    background-color: rgba(21, 255, 0, 0.315);
+}
+.replyMails .replyPopup .inne .moreActions span{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color:rgba(12, 95, 4, 0.795);
+}
+
+/* view history */
+.HistorySection{
+    border:.2px solid white;
+    border-radius: 10px;
+    padding:20px;
+    margin-top:3px;
+    background-color: rgba(0, 128, 0, 0.616);
+    width: 40em;
+    /* width:20em; */
+}
+.HistorySection .head{
+    font-size: 21px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(155, 155, 155);
+    border-radius: 10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.HistorySection .head .notification{
+    background-color: rgba(172, 255, 47, 0.705);
+    padding:7px;
+    border-radius: 10px;
+}
+.HistorySection .head .notification span{
+     /* border:.2px solid white; */
+     font-size: 12px;;
+     border-radius: 20px;
+     display: inline-block;
+     text-align: center;
+     margin-right: .3em;
+     background-color: rgb(255, 0, 0);
+     color:white;
+     font-weight: bold;
+     padding:4px;
+     font-size: 16px;
+
+}
+
+.HistorySection .head .notification i{
+    margin-right: 0em;
+    color:rgb(123, 255, 0)
+}
+@media (max-width:668px){
+    .HistorySection{
+        width:25em
+    }
+}
+@media (max-width:383px){
+    .HistorySection{
+        width:19em
+    }
+}
+.HistorySection .sentSection .detIndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.HistorySection .sentSection .detIndiv span{
+    width:90%;
+    margin: 5px;
+    height: 2em;
+    border:.2px solid white;
+   padding:5px;
+   display: inline-block;
+   border-radius: 10px;
+   background-color: greenyellow;
+    color:red;
+    overflow: auto;
+}
+.HistorySection .sentSection .detIndiv i{
+    border:.2px solid white;
+    padding:3px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color:red
+}

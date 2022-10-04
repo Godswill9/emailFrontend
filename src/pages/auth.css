@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.authCont{
+    width: 100%;
+    /* height:90vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 102, 255);
+    flex-direction: column;
+}
+
+.authCont .signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin:10px
+}
+.authCont .signup span{
+    font-size: 19px;
+    font-family: sans-serif;
+    padding:20px;
+    color:white;
+    font-weight: bold;
+}
+form{
+   width:18em;
+   border:.2px solid rgb(255, 255, 255);
+   padding:30px;
+   background-color: rgba(0, 0, 0, 0.411);
+   border-radius: 10px;;
+box-shadow: 0 0 10px white;
+}
+form .sec{
+  /* border-bottom:2px solid black; */
+  height:3em;
+  margin:10px
+}
+form .sec input{
+    height:3em;
+    width:100%;
+    border:none;
+    color:rgb(255, 255, 255);
+    background-color:inherit;
+    border-radius: 4px;
+    border-bottom:1px solid rgb(255, 255, 255);
+    font-size: 15px;
+}
+.authCont .Login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+}
+.authCont .Login span{
+    font-size: 19px;
+    font-family: sans-serif;
+    padding:20px;
+    color:white;
+    font-weight: bold;
+}
+.authCont .circles{
+    /* border:2px solid black; */
+    /* margin: 10px;
+    padding:10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.authCont .circles div{
+   width:1.8em;
+   height:1.8em;
+   border:.4px solid white;
+   margin:10px;
+   font-size: 22px;
+   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-color: blue;;
+  cursor: pointer;
+}
+.authSec{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding:10px
+}
+.authCont .check{
+    width:15px;
+    height:15px;
+    margin:10px
+}
+.authCont .but{
+    padding:10px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.411);
+    border:none;
+    border-radius: 5px;
+    margin:10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.authCont .but:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+}
+.authSec .signup .switch span{
+    font-size: 13px;
+}
+.authSec .signup .switch button{
+    padding:5px;
+    background-color: orange;
+    margin:5px;
+    border-radius: 7px;
+    border: none;
+}
+.authSec .Login .switch span{
+    font-size: 13px;
+}
+.authSec .Login .switch button{
+    padding:5px;
+    background-color: orange;
+    margin:2px;
+    border-radius: 7px;
+    border: none;
+}
+.hide{
+    display: none;
+}
+.authSec .signup{
+    display: none;
+}
+.authSec .Login{
+    visibility: visible;
+}
