@@ -30,7 +30,7 @@ export default function Auth() {
   const sendSignup=async(items)=>{
       await axios({
         method:"POST",
-        url:"http://localhost:3010/api/signup",
+        url:"https://email-api1.onrender.com/signup",
         data:items,
         withCredentials:true
       })
@@ -39,7 +39,7 @@ export default function Auth() {
   const sendLogin=async(items)=>{
       await axios({
         method:"POST",
-        url:"http://localhost:3010/api/login",
+        url:"https://email-api1.onrender.com/login",
         data:items,
         withCredentials:true
       })
