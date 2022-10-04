@@ -27,7 +27,7 @@ export default function SendMails() {
     }
     const sendMessageApi=async(obj)=>{
         await axios({
-            url:"https://email-api1.onrender.com/sendMail",
+            url:"https://email-api1.onrender.com/api/sendMail",
             method:"POST",
             data:obj,
             withCredentials:true
